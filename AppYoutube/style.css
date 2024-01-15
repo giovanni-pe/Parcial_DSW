@@ -1,0 +1,57 @@
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: #8FFF6B url('textura.jpg') repeat; /* Reemplaza 'textura.jpg' con el nombre de tu archivo de textura */
+        }
+
+        h1 {
+            color: #e44d26; /* Naranja oscuro */
+            text-align: center;
+            padding: 20px;
+            background-color: #fff; /* Fondo blanco */
+            margin-bottom: 0;
+        }
+
+        #video-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        li {
+            margin: 10px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.1),
+                        -6px -6px 16px rgba(255, 255, 255, 0.5);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        li:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            color: #e44d26; /* Naranja oscuro */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Estilos responsivos */
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            li {
+                padding: 10px;
+            }
+        }
+   

@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.demo";
+option java_outer_classname = "DemoProto";
+option objc_class_prefix = "HLW";
+
+package demo;
+
+service Videos {
+  rpc AddVideo (VideoRequest) returns (Reply) {}
+  rpc ListarVideos (Empty) returns (stream VideoReply) {}
+}
+
+message VideoRequest {
+  string titulo = 1;
+  string duracion = 2;
+  string autor = 3;
+  string url= 4;
+}
+
+message Reply {
+  string message = 1;
+}
+
+message Empty {}
+
+message VideoReply {
+  string titulo = 1;
+  string duracion = 2;
+  string autor = 3;
+  string url= 4;
+}
